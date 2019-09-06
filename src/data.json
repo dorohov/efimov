@@ -1,0 +1,28 @@
+{
+    "sitename": "Ефимов Г.А.",
+    "lang": "ru",
+    "phone": "+7(920)802-44-45",
+    "phone_link": "tel:89208024445",
+    "mail": "efimovgeorge@protonmail.com",
+    "messangers": {
+        "whatsapp": "#",
+        "viber": "#",
+        "telegram": "#"
+    },
+    "pages": {
+        "index": "index.html",
+        "about": "about.html",
+        "services.main": "services.main.html",
+        "services.all": "services.all.html",
+        "service": "service.html",
+        "practice.list": "practice.list.html",
+        "practice.current": "practice.current.html",
+        "th": "th.html",
+        "blog": "blog.html",
+        "article": "article.html",
+        "article.image": "article.image.html",
+        "page": "page.html",
+        "contacts": "contacts.html",
+        "error404": "404.html"
+    }
+}

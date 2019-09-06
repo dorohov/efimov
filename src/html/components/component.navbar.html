@@ -1,0 +1,108 @@
+<div class="navbar is--@@type">
+    <div class="navbar__inner container">
+        <div class="navbar__wrap">
+            <div class="navbar__logo">
+                <a href="@@pages.index">
+                    <img src="img/logo.svg" alt="@@sitename">
+                </a>
+            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="@@pages.index"><span>Главная</span></a></li>
+                    <li><a href="@@pages.about"><span>Об адвокате</span></a></li>
+                    <li class="is--active"><a href="@@pages.services"><span>Услуги</span></a></li>
+                    <li><a href="@@pages.practice.list"><span>Практика</span></a></li>
+                    <li><a href="@@pages.th"><span>Благодарности</span></a></li>
+                    <li><a href="@@pages.blog"><span>Блог</span></a></li>
+                    <li><a href="@@pages.contacts"><span>Контакты</span></a></li>
+                </ul>
+            </div>
+            <div class="navbar__mess">
+                <ul>
+                    <li>
+                        <a href="@@messangers.whatsapp">
+                            @@include('component.svg.html', {"name": "whatsapp"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@@messangers.viber">
+                            @@include('component.svg.html', {"name": "viber"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@@messangers.telegram">
+                            @@include('component.svg.html', {"name": "telegram"})
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__call">
+                <a href="@@phone_link">
+                    <div class="navbar__call__block">
+                        <div class="navbar__call__block__left">
+                            @@include('component.svg.html', {"name": "call"})
+                        </div>
+                        <div class="navbar__call__block__right">
+                            <div class="navbar__call__block__right__top">@@phone</div>
+                            <div class="navbar__call__block__right__bottom">Звоните мне</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar__mobile">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar__aside">
+    <div class="navbar__aside__inner">
+        <div class="navbar__aside__menu">
+            <ul>
+                <li><a href="@@pages.index"><span>Главная</span></a></li>
+                <li><a href="@@pages.about"><span>Об адвокате</span></a></li>
+                <li class="is--active"><a href="@@pages.services"><span>Услуги</span></a></li>
+                <li><a href="@@pages.practice.list"><span>Практика</span></a></li>
+                <li><a href="@@pages.th"><span>Благодарности</span></a></li>
+                <li><a href="@@pages.blog"><span>Блог</span></a></li>
+                <li><a href="@@pages.contacts"><span>Контакты</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar__mess">
+            <ul>
+                <li>
+                    <a href="@@messangers.whatsapp">
+                        @@include('component.svg.html', {"name": "whatsapp"})
+                    </a>
+                </li>
+                <li>
+                    <a href="@@messangers.viber">
+                        @@include('component.svg.html', {"name": "viber"})
+                    </a>
+                </li>
+                <li>
+                    <a href="@@messangers.telegram">
+                        @@include('component.svg.html', {"name": "telegram"})
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar__call">
+            <a href="@@phone_link">
+                <div class="navbar__call__block">
+                    <div class="navbar__call__block__left">
+                        @@include('component.svg.html', {"name": "call"})
+                    </div>
+                    <div class="navbar__call__block__right">
+                        <div class="navbar__call__block__right__top">@@phone</div>
+                        <div class="navbar__call__block__right__bottom">Звоните мне</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

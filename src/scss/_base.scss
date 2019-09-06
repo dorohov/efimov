@@ -1,0 +1,35 @@
+body {
+    font-family: 'HeliosCond';
+    &.is--np {
+        padding-top: 0 !important;
+    }
+    &.is--navbar {
+        overflow: hidden;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
