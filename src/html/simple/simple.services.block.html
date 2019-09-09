@@ -1,0 +1,15 @@
+<div class="services__line is--@@align is--@@num">
+    <div class="services__line__img" data-id="@@id">
+        <span>
+            <img src="img/@@img" alt="">
+        </span>
+    </div>
+    <div class="services__line__list">
+        <div class="services__line__list__heading">@@title</div>
+        <ul>
+            @@for(var i = 0; i < list.length; i++) {
+                <li><a href="@@pages.service">`+list[i].title+`</a></li>
+            }
+        </ul>
+    </div>
+</div>

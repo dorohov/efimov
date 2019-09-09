@@ -1,0 +1,74 @@
+.footer {
+    background: #151A1E;
+    padding: 45px 0 35px 0;
+    &__wrap {
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.28);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+            padding-top: 45px;
+            padding-bottom: 45px;
+            &__mess {
+                ul {
+                    display: flex;
+                    li {
+                        margin-right: 30px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        svg {
+                            fill: $c-secondary;
+                            transition: .25s all ease;
+                            &:hover {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &__phone {
+                a {
+                    font-family: 'Politica';
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+        &__center {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    a {
+                        display: block;
+                        padding: 10px 30px;
+                        color: #fff;
+                        transition: .25s all ease;
+                        &:hover {
+                            color: $c-secondary;
+                        }
+                    }
+                }
+            }
+        }
+        &__bottom {
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            &__dorohov {
+                svg {
+                    fill: #A8AAAC;
+                    transition: .25s all ease;
+                    &:hover {
+                        fill: $c-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

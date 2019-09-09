@@ -1,0 +1,95 @@
+.form {
+    &__fields {
+        display: flex;
+        flex-wrap: wrap;
+        &__block {
+            max-width: 25%;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            min-height: 80px;
+            input, button {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            &.is--name,
+            &.is--phone,
+            &.is--email {
+                input {
+                    border-right: 0;
+                }
+            }
+            &__icon {
+                position: absolute;
+                z-index: -1;
+                right: 35px;
+                top: 50%;
+                margin-top: -11px;
+                svg {
+                    fill: $c-primary;
+                }
+            }
+        }
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 1px solid rgba(85, 8, 16, 0.24);
+    padding: 25px 30px;
+    letter-spacing: 0.105em;
+    color: #101519;
+    background: transparent;
+    transition: .25s all ease;
+    &:focus {
+        background: rgba(85, 8, 16, 0.1);
+    }
+    &::placeholder {
+        color: #101519;
+    }
+}
+
+@media (max-width: 1025px) {
+    .form {
+        &__fields {
+            &__block {
+                max-width: 50%;
+                margin-bottom: 30px;
+                &.is--submit,
+                &.is--email {
+                    max-width: 100%;
+                }
+                &.is--phone,
+                &.is--email {
+                    input {
+                        border-right: 1px solid rgba(85, 8, 16, 0.24);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        &__fields {
+            &__block {
+                min-height: 0;
+                margin-bottom: 10px;
+                max-width: 100% !important;
+                &__icon {
+                    right: 15px;
+                }
+            }
+        }
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        border: 1px solid rgba(85, 8, 16, 0.24) !important;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
