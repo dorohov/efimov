@@ -1,0 +1,145 @@
+.about {
+    &__content {
+        color: #101519;
+        .heading {
+            margin-bottom: 70px;
+        }
+        ul.is--list {
+            li {
+                margin-bottom: 30px;
+                color: $c-secondary;
+                font-size: 18px;
+                span {
+                    color: #101519;
+                }
+                &::before {
+                    content: '\/\/ ';
+                }
+            }
+        }
+    }
+    &__top {
+        background: #FBFAFA;
+        padding: 130px 0 180px 0;
+        &__content,
+        &__footer {
+            display: flex;
+            margin: 0 -30px;
+            &__left,
+            &__right {
+                max-width: 50%;
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+        &__content {
+            margin-bottom: 130px;
+        }
+        &__footer {
+            &__heading {
+                font-family: 'Politica';
+                font-weight: 600;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__bottom {
+        padding: 100px 0 150px 0;
+        background: #fff;
+        &__content {
+            display: flex;
+            margin: 0 -30px;
+            &__left,
+            &__right {
+                max-width: 50%;
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        &__top {
+            &__content,
+            &__footer {
+                &__left,
+                &__right {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            &__content {
+                &__left,
+                &__right {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .about {
+        &__top {
+            padding: 50px 0;
+            &__content,
+            &__footer {
+                flex-wrap: wrap;
+                &__left,
+                &__right {
+                    max-width: 100%;
+                }
+            }
+            &__content {
+                margin-bottom: 50px;
+            }
+            &__footer {
+                &__left {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &__bottom {
+            padding: 50px 0;
+            &__content {
+                flex-wrap: wrap;
+                &__left,
+                &__right {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &__content {
+            ul.is--list {
+                li {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+            }
+        }
+        &__top {
+            &__footer {
+                &__heading {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

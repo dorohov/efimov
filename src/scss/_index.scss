@@ -54,6 +54,32 @@
                 }
             }
         }
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            &__heading {
+                font-size: 66px;
+                line-height: 117.2%;
+                text-transform: uppercase;
+                color: #550810;
+                font-weight: 600;
+                font-family: 'Politica';
+                margin-bottom: 40px;
+                width: 100%;
+            }
+            &__desc {
+                margin-bottom: 60px;
+                width: 100%;
+                p {
+                    margin: 0;
+                    font-size: 18px;
+                    color: #101519;
+                    line-height: 150%;
+                }
+            }
+        }
     }
     &__right {
         height: 100%;
@@ -148,6 +174,20 @@
             min-height: 0;
         }
         &__left {
+            &__content {
+                padding-bottom: 30px;
+                &__heading {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+                &__desc {
+                    margin-bottom: 30px;
+                    p {
+                        font-size: 16px;
+                        line-height: 120%;
+                    }
+                }
+            }
             &__info {
                 padding-bottom: 0;
                 &__inner {
@@ -169,6 +209,14 @@
             left: auto;
             right: 0;
             bottom: 0;
+        }
+        &.is--about {
+            padding-bottom: 0;
+            .banner {
+                &__right {
+                    position: static;
+                }
+            }
         }
     }
 }
@@ -219,6 +267,20 @@
         }
         &__right {
             display: none;
+        }
+        &.is--about {
+            .banner {
+                &__left {
+                    margin-bottom: 0;
+                }
+                &__inner {
+                    min-height: 0;
+                }
+                &__right {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
         }
     }
 }

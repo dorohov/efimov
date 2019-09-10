@@ -1,16 +1,21 @@
-<div class="services page">
-    <div class="service__top container">
-        <div class="heading is--mb80">
-            <div class="heading__text">
-                Основные услуги
-                <div class="heading__text__button">
-                    <a href="#" class="btn">
-                        Все услуги
-                    </a>
+    @@if(all == true) {
+        <div class="services page">
+    }
+    @@if(all == false) {
+        <div class="services">
+    }
+        <div class="service__top container">
+            <div class="heading is--mb80">
+                <div class="heading__text">
+                    Основные услуги
+                    <div class="heading__text__button">
+                        <a href="@@pages.services.all" class="btn">
+                            Все услуги
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <div class="services__inner is--c-pr">
         @@include('simple.services.block.html', {
             "id": "01",

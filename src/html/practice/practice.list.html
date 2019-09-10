@@ -1,0 +1,54 @@
+<div class="pr page">
+    <div class="pr__inner container">
+        @@include('../components/component.breadcrumbs.html', {
+            "list": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                }
+            ],
+            "current": "Практика"
+        })
+        <div class="heading is--mb80">
+            <div class="heading__text">Практика</div>
+        </div>
+        <div class="pr__table">
+            <table class="is--hover is--pr">
+                <thead>
+                    <tr>
+                        <th>Процесс</th>
+                        <th>Результат</th>
+                        <th>Отрасль</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @@include('practice.list.row.html', {
+                        "c1": "Дело по ДТП - защита",
+                        "c2": "Судом назначено наказание в виде 4 лет лишения свободы условно.",
+                        "c3": "Уголовная защита"
+                    })
+                    @@include('practice.list.row.html', {
+                        "c1": "Дело по ДТП – представительство интересов потерпевших",
+                        "c2": "Доверитель был оправдан",
+                        "c3": "Уголовная защита"
+                    })
+                    @@include('practice.list.row.html', {
+                        "c1": "Дело по ДТП - защита",
+                        "c2": "Судом назначено наказание в виде 4 лет лишения свободы условно.",
+                        "c3": "Уголовная защита"
+                    })
+                    @@include('practice.list.row.html', {
+                        "c1": "Дело по ДТП - защита",
+                        "c2": "Судом назначено наказание в виде 4 лет лишения свободы условно.",
+                        "c3": "Уголовная защита"
+                    })
+                    @@include('practice.list.row.html', {
+                        "c1": "Дело по ДТП - защита",
+                        "c2": "Судом назначено наказание в виде 4 лет лишения свободы условно.",
+                        "c3": "Уголовная защита"
+                    })
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

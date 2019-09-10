@@ -1,0 +1,18 @@
+<div class="services-main page">
+    <div class="services-main__inner">
+        <div class="services-main__br container">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "Основные услуги"
+            })
+        </div>
+        @@include('../simple/simple.services.html', {
+            "all": false
+        })
+    </div>
+</div>

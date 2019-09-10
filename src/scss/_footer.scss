@@ -72,3 +72,51 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        &__wrap {
+            &__top {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            &__center {
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__wrap {
+            &__top {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                &__left,
+                &__right {
+                    width: 100%;
+                }
+                &__mess {
+                    ul {
+                        justify-content: center;
+                    }
+                }
+                &__center {
+                    padding: 30px 0;
+                }
+            }
+            &__center {
+                display: none;
+            }
+        }
+    }
+}

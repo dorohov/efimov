@@ -55,7 +55,8 @@
         font-family: 'Politica';
         display: flex;
         align-items: center;
-        line-height: 30px;
+        line-height: 64px;
+        margin: 0;
         &__button {
             margin-left: auto;
         }
@@ -65,10 +66,55 @@
     }
     &.is--mb80 {margin-bottom: 80px;}
     &.is--mb70 {margin-bottom: 70px;}
+    &.is--mb40 {margin-bottom: 40px;}
     &.is--center {
         text-align: center;
         .heading__text {
             justify-content: center;
+        }
+    }
+}
+
+.breadcrumbs {
+    margin-bottom: 65px;
+    ul {
+        display: flex;
+        li {
+            font-size: 14px;
+            padding-right: 5px;
+            color: $c-secondary;
+            font-weight: bold;
+            a { 
+                color: #101519;
+                white-space: nowrap;
+                font-weight: normal;
+                transition: .25s all ease;
+                &::after {
+                    content: ' \/\/ ';
+                    color: $c-secondary;
+                }
+                &:hover {
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .page {
+        padding-top: 40px;
+    }
+    .breadcrumbs {
+        margin-bottom: 30px;
+    }
+    .heading {
+        &__text {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__sub {
+            padding-top: 30px;
         }
     }
 }
@@ -103,5 +149,8 @@
     .page {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .breadcrumbs {
+        display: none;
     }
 }

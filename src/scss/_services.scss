@@ -1,0 +1,134 @@
+.service {
+    color: #101519;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        max-width: 730px;
+        min-width: 730px;
+        width: 730px;
+        &__heading {
+            margin-bottom: 40px;
+            h1 {
+                font-family: 'Politica';
+                font-size: 64px;
+                text-transform: uppercase;
+                font-weight: uppercase;
+                margin: 0;
+            }
+        }
+        &__desc {
+            margin-bottom: 50px;
+            p {
+                margin: 0;
+                font-size: 18px;
+                line-height: 136.7%;
+            }
+        }
+        &__list {
+            margin-bottom: 80px;
+            &__inner {
+                display: flex;
+            }
+            &__block {
+                margin-right: 50px;
+                &__top {
+                    color: $c-primary;
+                    font-size: 18px;
+                    font-weight: bold;
+                    min-height: 40px;
+                    margin-bottom: 25px;
+                }
+                &__bottom {
+                    font-weight: bold;
+                    font-size: 24px;
+                    svg {
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .service {
+        &__left {
+            max-width: 500px;
+            min-width: 500px;
+            width: 500px;
+            &__heading {
+                margin-bottom: 20px;
+                h1 {
+                    font-size: 44px;
+                }
+            }
+            &__desc {
+                margin-bottom: 30px;
+                p {
+                    font-size: 16px;
+                }
+            }
+            &__list {
+                &__block {
+                    margin-right: 30px;
+                    &__top {
+                        font-size: 16px;
+                        min-height: 36px;
+                        margin-bottom: 15px;
+                    }
+                    &__bottom {
+                        font-size: 20px;
+                        svg {
+                            &.svg-ruble_b-dims {
+                                width: 10px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .service {
+        &__right {
+            display: none;
+        }
+        &__left {
+            max-width: 100%;
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        &__left {
+            &__heading {
+                h1 {
+                    font-size: 24px;
+                }
+            }
+            &__list {
+                margin-bottom: 20px;
+                &__inner {
+                    flex-wrap: wrap;
+                }
+                &__block {
+                    margin-right: 0;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    &__top {
+                        min-height: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

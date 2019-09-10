@@ -1,0 +1,139 @@
+table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    color: #101519;
+    &.is--service {
+        td {
+            &:first-child {
+                font-size: 14px;
+            }
+        }
+    }
+    &.is--pr {
+        th,
+        td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        td {
+            &:first-child {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+    &.is--hover {
+        tbody {
+            tr {
+                &:hover {
+                    background: url(../../img/table_bg.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color: #fff;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.is--center {
+        text-align: center;
+    }
+    th {
+        padding: 25px 10px;
+        color: $c-primary;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    td {
+        padding: 30px 10px;
+        &.is--nw {
+            white-space: nowrap;
+        }
+        span {
+            line-height: 13px;
+            display: block;
+        }
+        svg {
+            vertical-align: bottom;
+        }
+    }
+    tr {
+        border-bottom: 1px solid rgba(16, 21, 25, 0.33);
+        a {
+            color: inherit;
+            transition: .25s all ease;
+            &:hover {
+                color: $c-secondary;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    table {
+        br {
+            display: none;
+        }
+        thead {
+            tr {
+                th {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    table {
+        &.is--hover {
+            tr {
+                background: transparent !important;
+                color: #000 !important;
+            }
+        }
+        thead {
+            display: none;
+        }
+        tbody,
+        tbody tr,
+        tbody tr td {
+            display: block;
+        }
+        tbody {
+            tr {
+                margin-bottom: 30px;
+                border-bottom: 0;
+                &::before {
+                    content: attr(data-text);
+                    background: $c-primary;
+                    display: block;
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 10px;
+                }
+                td {
+                    margin-bottom: 15px;
+                    padding: 0 !important;
+                    white-space: normal !important;
+                    &:first-child {
+                        display: none;
+                    }
+                    &::before {
+                        content: attr(data-text);
+                        background: rgba($c-primary, .1);
+                        display: block;
+                        font-size: 18px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

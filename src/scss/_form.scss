@@ -1,4 +1,10 @@
 .form {
+    &.is--ff {
+        background: #fff;
+    }
+    &.is--f2 {
+        background: #F2F2F2;
+    }
     &__fields {
         display: flex;
         flex-wrap: wrap;
