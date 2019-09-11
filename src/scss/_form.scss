@@ -38,6 +38,18 @@
             }
         }
     }
+    &__cop {
+        padding-top: 30px;
+        font-size: 14px;
+        text-align: center;
+        a {
+            color: $c-primary;
+            transition: .25s all ease;
+            &:hover {
+                color: $c-secondary;
+            }
+        }
+    }
 }
 
 input[type="text"],

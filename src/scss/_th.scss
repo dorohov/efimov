@@ -1,0 +1,100 @@
+.th {
+    &__list {
+        max-width: 1230px;
+        margin-bottom: 80px;
+    }
+    &__block {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__inner {
+            display: flex;
+        }
+        &__left {
+            min-width: 220px;
+            width: 220px;
+            margin-right: 60px;
+            img {
+                box-shadow: 5px 4px 16px rgba(0, 0, 0, 0.166);
+            }
+        }
+        &__right {
+            &__top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                &__name {
+                    &__per {
+                        color: $c-primary;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin-bottom: 8px;
+                    }
+                    &__f {
+                        font-size: 16px;
+                    }
+                }
+                &__date {
+                    color: $c-primary;
+                    font-size: 18px;
+                }
+            }
+            &__text {
+                font-size: 18px;
+                line-height: 159.7%;
+            }
+            &__mt {
+                padding-top: 20px;
+                display: none;
+                a {
+                    color: $c-primary;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .th {
+        &__block {
+            &__right {
+                &__text {
+                    font-size: 16px;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .th {
+        &__list {
+            margin-bottom: 50px;
+        }
+        &__block {
+            &__left {
+                display: none;
+            }
+            &__right {
+                &__mt {
+                    display: block;
+                }
+                &__top {
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    &__name {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                    &__date {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

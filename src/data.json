@@ -5,9 +5,9 @@
     "phone_link": "tel:89208024445",
     "mail": "efimovgeorge@protonmail.com",
     "messangers": {
-        "whatsapp": "#",
-        "viber": "#",
-        "telegram": "#"
+        "whatsapp": "https://wa.me/89208024445",
+        "viber": "viber://chat?number=89208024445",
+        "telegram": "tg://msg?to=89208024445"
     },
     "pages": {
         "index": "index.html",

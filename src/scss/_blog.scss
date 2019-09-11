@@ -1,0 +1,169 @@
+.blog {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 55px -15px;
+    }
+    &__block {
+        max-width: 25%;
+        width: 100%;
+        padding: 15px;
+        &__inner {
+            border: 1px solid rgba(16, 21, 25, 0.17);
+            display: block;
+            &:hover {
+                background: url(../../img/blog_bg.jpg);
+                .blog {
+                    &__block {
+                        &__top {
+                            border-color: rgba(255, 255, 255, 0.54);
+                            color: #fff;
+                            svg {
+                                fill: #fff;
+                            }
+                        }
+                        &__main {
+                            &__title,
+                            &__text {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__top {
+            padding: 30px 40px;
+            border-bottom: 1px solid rgba(16, 21, 25, 0.17);
+            color: $c-primary;
+            display: flex;
+            align-items: center;
+            svg {
+                fill: $c-primary;
+                margin-right: 10px;
+            }
+        }
+        &__main {
+            padding: 50px 40px 70px 40px;
+            &__title {
+                font-weight: bold;
+                font-size: 18px;
+                color: $c-primary;
+                margin-bottom: 20px;
+                min-height: 40px;
+            }
+            &__text {
+                color: #101519;
+                font-size: 18px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                height: 80px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;  
+            }
+        }
+    }
+}
+
+.article {
+    .pr-c__more {
+        margin-bottom: 0;
+    }
+    &__content {
+        margin-bottom: 130px;
+        &__img {
+            margin: 40px 0;
+        }
+        p,
+        ul,
+        ol {
+            margin: 40px 0;
+            font-size: 18px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        ul, ol {
+            li {
+                margin-bottom: 5px;
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 4px;
+                    background: $c-primary;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        &__block {
+            max-width: 33.333333%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .blog {
+        &__block {
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .blog {
+        &__list {
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 30px;
+        }
+        &__block {
+            padding: 10px;
+            &__top,
+            &__main {
+                padding: 20px;
+            }
+            &__main {
+                &__title {
+                    font-size: 16px;
+                    min-height: 35px;
+                    margin-bottom: 10px;
+                }
+                &__text {
+                    font-size: 16px;
+                    height: 75px;
+                }
+            }
+        }
+    }
+    .article {
+        &__content {
+            margin-bottom: 60px;
+            p, ul, ol {
+                font-size: 16px;
+                margin: 20px 0;
+            }
+            &__img {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        &__block {
+            max-width: 100%;
+        }
+    }
+}

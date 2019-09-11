@@ -1,0 +1,41 @@
+<div class="contacts page">
+    <div class="contacts__inner container">
+        <div class="contacts__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "Контакты"
+            })
+            <div class="heading is--mb40">
+                <div class="heading__text">Контакты</div>
+            </div>
+            <div class="contacts__left__list">
+                <ul>
+                    <li>
+                        @@include('../components/component.svg.html', {"name": "c_marker"})
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, porro.</span>
+                    </li>
+                    <li>
+                        <a href="@@phone_link">
+                            @@include('../components/component.svg.html', {"name": "c_phone"})
+                            <span>@@phone</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:@@mail">
+                            @@include('../components/component.svg.html', {"name": "c_email"})
+                            <span>@@mail</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contacts__right">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>

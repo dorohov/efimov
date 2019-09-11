@@ -42,8 +42,8 @@
 }
 
 .page {
-    padding-top: 110px;
-    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-bottom: 120px;
 }
 
 .heading {
@@ -76,7 +76,7 @@
 }
 
 .breadcrumbs {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     ul {
         display: flex;
         li {
@@ -95,6 +95,40 @@
                 }
                 &:hover {
                     color: $c-primary;
+                }
+            }
+        }
+    }
+}
+
+.paginate {
+    &__inner {
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0 -4px;
+            li {
+                padding: 0 4px;
+                a,
+                span {
+                    display: flex;
+                    width: 33px;
+                    height: 33px;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    color: #000;
+                }
+                span {
+                    background: $c-primary;
+                    color: #fff;
+                    border-radius: 100%;
+                }
+                a {
+                    transition: .25s all ease;
+                    &:hover {
+                        color: $c-primary;
+                    }
                 }
             }
         }
