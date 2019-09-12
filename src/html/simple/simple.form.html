@@ -6,19 +6,19 @@
         </div>
         <form class="form__fields">
             <div class="form__fields__block is--name">
-                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваше имя" required>
                 <span class="form__fields__block__icon">
                     @@include('../components/component.svg.html', {"name": "form_name"})
                 </span>
             </div>
             <div class="form__fields__block is--phone">
-                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваш телефон" required id="in-phone">
                 <span class="form__fields__block__icon">
                     @@include('../components/component.svg.html', {"name": "form_phone"})
                 </span>
             </div>
             <div class="form__fields__block is--email">
-                <input type="text" placeholder="Ваша почта">
+                <input type="text" placeholder="Ваша почта" required>
                 <span class="form__fields__block__icon">
                     @@include('../components/component.svg.html', {"name": "form_email"})
                 </span>

@@ -68,6 +68,15 @@
                 }
             ]
         })
+
+        $('form').parsley()
+
+        var phoneInputs = document.getElementById('in-phone');
+
+        new IMask(
+            phoneInputs, {
+            mask: '+{7}(900)000-00-00'
+        });
         
     })
 })(jQuery);

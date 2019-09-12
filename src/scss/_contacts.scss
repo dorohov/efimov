@@ -5,6 +5,38 @@
     &__left {
         min-width: 360px;
         margin-right: 20px;
+        &__list {
+            ul {
+                li,
+                li a {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: 18px;
+                    color: #101519;
+                    span {
+                        display: block;
+                        margin-left: 10px;
+                    }
+                    svg {
+                        fill: $c-primary;
+                    }
+                }
+                li {
+                    margin-bottom: 25px;
+                    &.is--mess {
+                        a {
+                            margin-right: 18px;
+                        }
+                    }
+                }
+                a {
+                    transition: .25s all ease;
+                    &:hover {
+                        color: $c-primary;
+                    }
+                }
+            }
+        }
     }
     &__right {
         width: 100%;
@@ -15,4 +47,30 @@
 #map {
     width: 100%;
     height: 410px;
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__right {
+            max-width: 100%;
+        }
+        &__left {
+            min-width: 0;
+            margin-right: 0;
+            &__list {
+                ul {
+                    li,
+                    li a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    #map {
+        height: 300px;
+    }
 }
