@@ -77,6 +77,16 @@
             phoneInputs, {
             mask: '+{7}(900)000-00-00'
         });
+
+        $('.anchor').on('click', function(e) {
+            e.preventDefault();
+            var _this = $(this)
+            var aid = _this.attr("href");
+            if(!aid) {
+                aid = _this.data('target')
+            }
+            $('html,body').animate({scrollTop: $(aid).offset().top - $('.navbar').innerHeight()},'slow');
+        })
         
     })
 })(jQuery);

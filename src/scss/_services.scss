@@ -52,6 +52,12 @@
     }
 }
 
+.services-main {
+    .services {
+        background: #fff;
+    }
+}
+
 @media (max-width: 1200px) {
     .service {
         &__left {
