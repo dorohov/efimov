@@ -9,6 +9,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.28);
             padding-top: 45px;
             padding-bottom: 45px;
+            align-items: center;
             &__mess {
                 ul {
                     display: flex;
@@ -25,6 +26,11 @@
                             }
                         }
                     }
+                }
+            }
+            &__center {
+                img {
+                    width: auto;
                 }
             }
             &__phone {

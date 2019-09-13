@@ -4,8 +4,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
     &__inner {
-        height: calc(100vh - 170px);
+        min-height: calc(100vh - 170px);
         display: flex;
     }
     &__left {
@@ -27,6 +28,9 @@
                 line-height: 136.7%;
                 color: #101519;
                 margin-bottom: 70px;
+            }
+            &__btn {
+                margin-bottom: 20px;
             }
         }
         &__info {

@@ -43,7 +43,7 @@
         }
 
         function setNavbarDefaultMode(height) {
-            if(height > $('.navbar').innerHeight()) {
+            if(height > 10) {
                 $('.navbar').addClass('is--scroll')
             }else {
                 $('.navbar').removeClass('is--scroll')

@@ -28,7 +28,7 @@
             right: auto;
         }
     }
-    &:after {
+    &::after {
         content: '';
         width: 0;
         height: 100%;
@@ -38,6 +38,23 @@
         top: 0;
         z-index: -1;
         transition: .5s all ease;
+    }
+    &.is--inv {
+        background: $c-primary;
+        color: #fff;
+        &:hover {
+            color: $c-primary;
+        }
+        &.is--ff {
+            &::after {
+                background: #fff;
+            }
+        }
+        &.is--f2 {
+            &::after {
+                background: #F2F2F2
+            }
+        }
     }
 }
 

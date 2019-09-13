@@ -30,6 +30,7 @@
     &__logo {
         height: 100%;
         border-right: 1px solid rgba(16, 21, 25, 0.17);
+        max-width: 150px;
         a {
             display: flex;
             align-items: center;
@@ -183,7 +184,7 @@
         transition: .8s all cubic-bezier(.99,.01,0,1);
         transform: translateX(-101%);
         height: 100%;
-        padding-top: 110px;
+        // padding-top: 110px;
         display: none;
         z-index: 999;
         &.is--open {
@@ -191,7 +192,7 @@
         }
         &__inner {
             overflow: auto;
-            padding-bottom: 20px;
+            padding-bottom: 120px;
             height: 100%;
             overflow: auto;
         }
