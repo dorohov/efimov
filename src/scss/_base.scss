@@ -5,6 +5,9 @@ body {
     }
     &.is--navbar {
         overflow: hidden;
+        .navbar {
+          background: #fff;
+        }
     }
 }
 
