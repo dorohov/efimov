@@ -36,3 +36,27 @@ svg,
 img {
     vertical-align: middle;
 }
+
+a.is--whatsapp {
+    &:hover {
+        svg {
+            fill: #4DC85A !important;
+        }
+    }
+}
+
+a.is--viber {
+    &:hover {
+        svg {
+            fill: #5E3683 !important;
+        }
+    }
+}
+
+a.is--telegram {
+    &:hover {
+        svg {
+            fill: #0084C6 !important;
+        }
+    }
+}
