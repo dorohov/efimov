@@ -38,25 +38,34 @@ img {
 }
 
 a.is--whatsapp {
+    svg {
+        fill: #4DC85A !important;
+    }
     &:hover {
         svg {
-            fill: #4DC85A !important;
+            // fill: #4DC85A !important;
         }
     }
 }
 
 a.is--viber {
+    svg {
+        fill: #5E3683 !important;
+    }
     &:hover {
         svg {
-            fill: #5E3683 !important;
+            // fill: #5E3683 !important;
         }
     }
 }
 
 a.is--telegram {
+    svg {
+        fill: #0084C6 !important;
+    }
     &:hover {
         svg {
-            fill: #0084C6 !important;
+            // fill: #0084C6 !important;
         }
     }
 }
