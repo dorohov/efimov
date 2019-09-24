@@ -228,7 +228,7 @@
 @media (max-width: 768px) {
     .banner {
         &__inner {
-            min-height: calc(100vh - 120px);
+            // min-height: calc(100vh - 120px);
         }
         &__left {
             &__heading {
