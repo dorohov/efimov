@@ -94,7 +94,7 @@
         bottom: 0;
         padding-top: 170px;
         left: 0;
-        padding-left: 54vw;
+        padding-left: 60vw;
         img {
             max-width: 100%;
             max-height: 100%;
@@ -136,7 +136,7 @@
         padding-top: 120px;
         &__inner {
             height: auto;
-            min-height: calc(100vh - 120px);
+            min-height: 0;
         }
         &__right {
             position: static;
@@ -175,7 +175,6 @@
         padding-bottom: 50px;
         &__inner {
             flex-wrap: wrap;
-            min-height: 0;
         }
         &__left {
             &__content {
@@ -208,7 +207,7 @@
             }
         }
         &__right {
-            max-width: 55vw;
+            max-width: 42vw;
             position: absolute;
             left: auto;
             right: 0;
@@ -270,7 +269,8 @@
             }
         }
         &__right {
-            display: none;
+            // display: none;
+            max-width: 46vw;
         }
         &.is--about {
             .banner {
